@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :cars, only: [:index]
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'cars/new', to: 'cars#new'
+  post 'cars', to: 'cars#create'
 end
