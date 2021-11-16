@@ -1,10 +1,11 @@
 <div class="container">
-  <h1>See all cars</h1>
+  <h1>Choose one car</h1>
     <div class="card-product">
-    <img src="https://bildagentur.panthermedia.net/m/lizenzfreie-bilder/19783009/car-sharing-with-the-smartphone/#highprv" />
+    <img src="" />
     <div class="card-product-infos">
-      <h2>Your Car</h2>
-      <p>A Car for having fun <strong><%= @car.model %></strong> only.</p>
+      <h2><%= @car.brand %> <%= @car.model %></h2>
+      <p><%= @car.description %></p>
+      <p>seats:<%= @car.seats %></p>
     </div>
   </div>
 </div>
