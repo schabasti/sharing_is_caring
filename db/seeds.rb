@@ -99,4 +99,37 @@ mercedes_gt.description = "Brand new model with 730HP. Driving performance for s
 mercedes_gt.user = sebastian
 mercedes_gt.save!
 
+# Seed rentings
+puts "Creating a few rentings"
+
+renting_1 = Renting.new
+renting_1.date = "10.10.2021"
+renting_1.car = audi_a4
+renting_1.user = finn
+renting_1.save!
+
+renting_2 = Renting.new
+renting_2.date = "15.10.2021"
+renting_2.car = bmw_5
+renting_2.user = marcus
+renting_2.save!
+
+renting_3 = Renting.new
+renting_3.date = "05.11.1997"
+renting_3.car = mercedes_gt
+renting_3.user = marcus
+renting_3.save!
+
+renting_4 = Renting.new
+renting_4.date = "09.11.2021"
+renting_4.car = mercedes_s
+renting_4.user = sebastian
+renting_4.save!
+
+renting_5 = Renting.new
+renting_5.date = "10.10.2021"
+renting_5.car = vw_bulli
+renting_5.user = louis
+renting_5.save!
+
 puts "Finished all seeding"

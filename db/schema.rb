@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_11_15_164733) do
   end
 
   create_table "rentings", force: :cascade do |t|
-    t.integer "date"
+    t.date "date"
     t.bigint "user_id", null: false
     t.bigint "car_id", null: false
     t.datetime "created_at", precision: 6, null: false
