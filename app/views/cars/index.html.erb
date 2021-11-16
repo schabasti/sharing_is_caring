@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>All Cars</h1>
+  <% @cars.each do |car| %>
+    <div class="card">
+      <div><%= car.brand %></div>
+      <div><%= car.model%></div>
+      <div><%= car.seats%></div>
+      <div><%= car.description%></div>
+    </div>
+  <% end %>
+</div>
