@@ -1,0 +1,10 @@
+<div class="container">
+  <h1> Create a new car 🚘 </h1>
+  <%= simple_form_for(@car) do |f| %>
+    <%= f.input :brand %>
+    <%= f.input :model %>
+    <%= f.input :seats %>
+    <%= f.input :description %>
+    <%= f.submit %>
+  <% end %>
+</div>
