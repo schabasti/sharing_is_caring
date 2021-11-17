@@ -1,10 +1,17 @@
-<div class="container">
+<div class="banner-small" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://stars-h2020.eu/wp-content/uploads/2018/03/Photo-INEA-Project-Fiche.png);">
+  <div class="container">
+  <h1>Sharing is Caring</h1>
+  <p>Your local eco-friendly car service</p>
+  </div>
+</div>
+<br>
+<div class="container-show">
     <div class="card-product">
     <img src="" />
     <div class="card-product-infos">
       <h2><%= @car.brand %> <%= @car.model %></h2>
       <p><%= @car.description %></p>
-      <p>seats:<%= @car.seats %></p>
+      <p><%= @car.seats %> Seater</p>
     </div>
   </div>
 </div>
