@@ -8,7 +8,7 @@
 <div class="container">
   <div class="container-show">
     <div class="card-product">
-      <img src="" />
+      <%= cl_image_tag @car.photo.key %>
       <div class="card-product-infos">
         <h2><%= @car.brand %> <%= @car.model %></h2>
         <p><%= @car.description %></p>

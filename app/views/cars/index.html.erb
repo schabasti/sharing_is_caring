@@ -10,12 +10,12 @@
   <h1>All Cars</h1>
   <% @cars.each do |car| %>
     <div class="card-product">
-      <img src="http://www.carsharing-blog.de/wp-content/uploads/2013/04/muenchen_carsharing.jpg" />
+      <%= cl_image_tag car.photo.key %>
       <div class="card-product-infos">
-      <h2><%= car.model %></h2>
-      <p><%= car.description %></p>
+        <h2><%= car.brand %> <%= car.model %></h2>
+        <p><%= car.description %></p>
+      </div>
     </div>
-  </div>
   <br>
   <% end %>
 
