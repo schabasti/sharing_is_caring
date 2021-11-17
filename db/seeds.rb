@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Starting to work on the seed file
+require 'open-uri'
+
 puts "Destroying Database"
 
 Renting.destroy_all
@@ -57,6 +59,8 @@ audi_a4.model = "A4"
 audi_a4.seats = 5
 audi_a4.description = "Barely used car free to be rented out to experienced drivers"
 audi_a4.user = sebastian
+a_4_picture = URI.open('https://i.auto-bild.de/mdb/large/77/a4-f8a.png')
+audi_a4.photo.attach(io: a_4_picture, filename: 'nes.png', content_type: 'image/png')
 audi_a4.save!
 
 bmw_5 = Car.new
@@ -65,6 +69,8 @@ bmw_5.model = "M5"
 bmw_5.seats = 5
 bmw_5.description = "I bought the BMW last year to enjoy the German Autobahn. Sportious car for adventurous drivers"
 bmw_5.user = finn
+m5_picture = URI.open('https://img.nzz.ch/2019/7/29/9edfd429-7bff-49f6-9538-57814252c57c.jpeg?width=750&height=421&fit=crop&quality=75&auto=webp')
+bmw_5.photo.attach(io: m5_picture, filename: 'nes.png', content_type: 'image/png')
 bmw_5.save!
 
 mercedes_s = Car.new
@@ -73,6 +79,8 @@ mercedes_s.model = "S-Class"
 mercedes_s.seats = 5
 mercedes_s.description = "Luxurious limo with driver to bring you to your next big event"
 mercedes_s.user = luis
+mercedes_s_picture = URI.open('https://imgr1.auto-motor-und-sport.de/Mercedes-S-Klasse-W223-fotoshowBig-457e2b00-1736414.jpg')
+mercedes_s.photo.attach(io: mercedes_s_picture, filename: 'nes.png', content_type: 'image/png')
 mercedes_s.save!
 
 audi_rs6 = Car.new
@@ -81,6 +89,8 @@ audi_rs6.model = "RS6"
 audi_rs6.seats = 5
 audi_rs6.description = "Wolf in sheeps clothing. Be faster than a Porsche in a family car"
 audi_rs6.user = marcus
+audi_rs6_picture = URI.open('https://cdn.motor1.com/images/mgl/n7O6x/s1/audi-rs-6-avant-2019.jpg')
+audi_rs6.photo.attach(io: audi_rs6_picture, filename: 'nes.png', content_type: 'image/png')
 audi_rs6.save!
 
 vw_bulli = Car.new
@@ -89,6 +99,8 @@ vw_bulli.model = "T6"
 vw_bulli.seats = 9
 vw_bulli.description = "Classic VW Bulli for a group of friends or family"
 vw_bulli.user = marcus
+vw_bulli_picture = URI.open('https://i.auto-bild.de/mdb/extra_large/18/t6-03d.png')
+vw_bulli.photo.attach(io: vw_bulli_picture, filename: 'nes.png', content_type: 'image/png')
 vw_bulli.save!
 
 mercedes_gt = Car.new
@@ -97,6 +109,8 @@ mercedes_gt.model = "GT"
 mercedes_gt.seats = 2
 mercedes_gt.description = "Brand new model with 730HP. Driving performance for sports car enthusiasts."
 mercedes_gt.user = sebastian
+mercedes_gt_picture = URI.open('https://imgr1.auto-motor-und-sport.de/Mercedes-AMG-GT-Exterieur-bigMobileWide-516f98c-1787047.jpg')
+mercedes_gt.photo.attach(io: mercedes_gt_picture, filename: 'nes.png', content_type: 'image/png')
 mercedes_gt.save!
 
 # Seed rentings
