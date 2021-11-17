@@ -15,7 +15,7 @@ class RentingsController < ApplicationController
     @renting.user = current_user
     @renting.car = @car
     if @renting.save
-      redirect_to cars_path
+      redirect_to car_renting_path(@car, @renting)
     else
       render :new
     end
