@@ -1,6 +1,11 @@
 class RentingsController < ApplicationController
   before_action :set_car, only: %i[new create]
 
+  def show
+    @car = Car.find(params[:car_id])
+    @renting = Renting.find(params[:id])
+  end
+
   def new
     @renting = Renting.new
   end
