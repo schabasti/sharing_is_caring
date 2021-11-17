@@ -3,6 +3,11 @@ class CarsController < ApplicationController
     @cars = Car.all
   end
 
+  def show
+    id = params[:id]
+    @car = Car.find(id)
+  end
+
   def new
     @car = Car.new
   end
