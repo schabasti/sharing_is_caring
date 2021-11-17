@@ -1,10 +1,17 @@
 <div class="container">
   <h1> Create a new car 🚘 </h1>
-  <%= simple_form_for(@car) do |f| %>
-    <%= f.input :brand %>
-    <%= f.input :model %>
-    <%= f.input :seats %>
-    <%= f.input :description %>
-    <%= f.submit %>
-  <% end %>
+  <div class="input-form">
+    <%= simple_form_for(@car) do |f| %>
+      <%= f.input :brand %>
+      <%= f.input :model %>
+      <%= f.input :seats %>
+      <%= f.input :description %>
+      <%= f.submit class: "btn btn-primary" %>
+    <% end %>
+  </div>
+
+  <div class="display=flex text-center">
+    <%= link_to "See all cars", cars_path, class: "btn btn-secondary"%>
+    <%= link_to "Back to Homepage", root_path, class: "btn btn-secondary"%>
+  </div>
 </div>
