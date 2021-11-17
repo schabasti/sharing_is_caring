@@ -24,13 +24,13 @@ finn.age = 18
 finn.location = "Duesseldorf"
 finn.save!
 
-louis = User.new
-louis.email = "louis@lewagon.org"
-louis.password = "123456"
-louis.username = "louiskohl"
-louis.age = 18
-louis.location = "Duesseldorf"
-louis.save!
+luis = User.new
+luis.email = "luis@lewagon.org"
+luis.password = "123456"
+luis.username = "luiskohl"
+luis.age = 18
+luis.location = "Duesseldorf"
+luis.save!
 
 sebastian = User.new
 sebastian.email = "sebastian@lewagon.org"
@@ -72,7 +72,7 @@ mercedes_s.brand = "Mercedes"
 mercedes_s.model = "S-Class"
 mercedes_s.seats = 5
 mercedes_s.description = "Luxurious limo with driver to bring you to your next big event"
-mercedes_s.user = louis
+mercedes_s.user = luis
 mercedes_s.save!
 
 audi_rs6 = Car.new
@@ -129,7 +129,7 @@ renting_4.save!
 renting_5 = Renting.new
 renting_5.date = "10.10.2021"
 renting_5.car = vw_bulli
-renting_5.user = louis
+renting_5.user = luis
 renting_5.save!
 
 puts "Finished all seeding"
