@@ -1,11 +1,13 @@
 <div class="container">
   <h1>All Cars</h1>
   <% @cars.each do |car| %>
-    <div class="card">
-      <div><%= car.brand %></div>
-      <div><%= car.model%></div>
-      <div><%= car.seats%></div>
-      <div><%= car.description%></div>
+    <div class="card-product">
+      <img src="http://www.carsharing-blog.de/wp-content/uploads/2013/04/muenchen_carsharing.jpg" />
+      <div class="card-product-infos">
+      <h2><%= car.model %></h2>
+      <p><%= car.description %></p>
     </div>
+  </div>
+  <br>
   <% end %>
 </div>
