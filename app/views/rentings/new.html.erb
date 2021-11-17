@@ -1,7 +1,14 @@
 <div class="container">
-  <h1> Book your car 🚘 </h1>
-  <%= simple_form_for [@car, @renting] do |f| %>
-    <%= f.input :date %>
-    <%= f.submit class: "btn btn-primary" %>
-  <% end %>
+  <h1> Rent your car 🚘 </h1>
+  <div class="input-form">
+    <%= simple_form_for [@car, @renting] do |f| %>
+      <%= f.input :date %>
+      <%= f.submit class: "btn btn-primary" %>
+    <% end %>
+  </div>
+
+  <div class="display=flex text-center">
+    <%= link_to "See all cars", cars_path, class: "btn btn-secondary"%>
+    <%= link_to "Check car details", car_path(@car), class: "btn btn-secondary"%>
+  </div>
 </div>
