@@ -87,7 +87,7 @@ mercedes_s.model = "S-Class"
 mercedes_s.seats = 5
 mercedes_s.description = "Luxurious limo with driver to bring you to your next big event"
 mercedes_s.user = luis
-mercedes_s_picture = URI.open('https://imgr1.auto-motor-und-sport.de/Mercedes-S-Klasse-W223-fotoshowBig-457e2b00-1736414.jpg')
+mercedes_s_picture = URI.open('https://imgr1.auto-motor-und-sport.de/Mercedes-S-Klasse-W223-bigMobileWide-15a7a86f-1736414.jpg')
 mercedes_s.photo.attach(io: mercedes_s_picture, filename: 'nes.png', content_type: 'image/png')
 mercedes_s.save!
 
