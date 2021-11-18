@@ -1,0 +1,50 @@
+.banner-car {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container-show {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 150px;
+  margin-left: 150px;
+  border-radius: 10px;
+  background-color: white;
+  font-family: PT Serif;
+
+  h2 {
+    color: rgb(20, 19, 19);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 20px;
+    color: rgb(20, 19, 19);
+    opacity: .7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+}
+
+.car-description {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted rgba(20, 19, 19, .1);
+
+  .rent-button {
+    padding: 15px;
+    font-size: 20px;
+  }
+}
+  .back-button {
+    padding: 15px;
+  }
+
+.car-info {
+}
