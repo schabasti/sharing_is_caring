@@ -1,5 +1,5 @@
 <div class="container">
-  <h1> Rent your car 🚘 </h1>
+  <h1> Rent your car <%= image_tag("https://icon-library.com/images/car-icon-front/car-icon-front-15.jpg", width: "50", height: "40")  %> </h1>
   <div class="input-form">
     <%= simple_form_for [@car, @renting] do |f| %>
       <%= f.input :date %>
