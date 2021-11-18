@@ -24,6 +24,8 @@ finn.password = "123456"
 finn.username = "finnerdmann"
 finn.age = 18
 finn.location = "Duesseldorf"
+finn_picture = URI.open('https://kitt.lewagon.com/placeholder/users/jfcerdmann')
+finn.photo.attach(io: finn_picture, filename: 'nes.png', content_type: 'image/png')
 finn.save!
 
 luis = User.new
@@ -32,6 +34,8 @@ luis.password = "123456"
 luis.username = "luiskohl"
 luis.age = 18
 luis.location = "Duesseldorf"
+luis_picture = URI.open('https://kitt.lewagon.com/placeholder/users/code7756221432')
+luis.photo.attach(io: luis_picture, filename: 'nes.png', content_type: 'image/png')
 luis.save!
 
 sebastian = User.new
@@ -40,6 +44,8 @@ sebastian.password = "123456"
 sebastian.username = "sebastianburkhardt"
 sebastian.age = 27
 sebastian.location = "Munich"
+sebastian_picture = URI.open('https://kitt.lewagon.com/placeholder/users/schabasti')
+sebastian.photo.attach(io: sebastian_picture, filename: 'nes.png', content_type: 'image/png')
 sebastian.save!
 
 marcus = User.new
@@ -48,6 +54,8 @@ marcus.password = "123456"
 marcus.username = "marcuswrede"
 marcus.age = 24
 marcus.location = "Muenster"
+marcus_picture = URI.open('https://kitt.lewagon.com/placeholder/users/wredemarcus')
+marcus.photo.attach(io: marcus_picture, filename: 'nes.png', content_type: 'image/png')
 marcus.save!
 
 # Seeding cars
