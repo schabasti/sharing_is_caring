@@ -8,6 +8,7 @@
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .card-product img {
@@ -35,4 +36,10 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+}
+
+.action-buttons {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
 }
