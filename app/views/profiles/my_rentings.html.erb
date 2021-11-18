@@ -7,14 +7,14 @@
 <br>
 
 <div class="container-index">
-  <h2><%= current_user.username.capitalize %>'s Rentings</h2>
+  <h2 class="text-center"><%= current_user.username.capitalize %>'s Rentings</h2>
   <% @rentings.each do |renting| %>
     <%= link_to(car_path(renting.car)) do %>
     <div class="card-product">
       <%= cl_image_tag renting.car.photo.key %>
       <div class="card-product-infos">
-        <p> On the <%= renting.date %> </p>
         <h4><%= renting.car.brand %> <%= renting.car.model %></h4>
+        <p> On the <%= renting.date %> </p>
       </div>
     </div>
     <% end %>
