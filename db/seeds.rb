@@ -21,6 +21,8 @@ puts "Creating Users"
 finn = User.new
 finn.email = "finn@lewagon.org"
 finn.password = "123456"
+finn.first_name = "Finn"
+finn.last_name = "Erdmann"
 finn.username = "finnerdmann"
 finn.age = 18
 finn.location = "Duesseldorf"
@@ -31,6 +33,8 @@ finn.save!
 luis = User.new
 luis.email = "luis@lewagon.org"
 luis.password = "123456"
+luis.first_name = "Luis"
+luis.last_name = "Kohl"
 luis.username = "luiskohl"
 luis.age = 18
 luis.location = "Duesseldorf"
@@ -41,6 +45,8 @@ luis.save!
 sebastian = User.new
 sebastian.email = "sebastian@lewagon.org"
 sebastian.password = "123456"
+sebastian.first_name = "Sebastian"
+sebastian.last_name = "Burkhardt"
 sebastian.username = "sebastianburkhardt"
 sebastian.age = 27
 sebastian.location = "Munich"
@@ -51,6 +57,8 @@ sebastian.save!
 marcus = User.new
 marcus.email = "marcus@lewagon.org"
 marcus.password = "123456"
+marcus.first_name = "Marcus"
+marcus.last_name = "Wrede"
 marcus.username = "marcuswrede"
 marcus.age = 24
 marcus.location = "Muenster"
@@ -87,7 +95,7 @@ mercedes_s.model = "S-Class"
 mercedes_s.seats = 5
 mercedes_s.description = "Luxurious limo with driver to bring you to your next big event"
 mercedes_s.user = luis
-mercedes_s_picture = URI.open('https://imgr1.auto-motor-und-sport.de/Mercedes-S-Klasse-W223-fotoshowBig-457e2b00-1736414.jpg')
+mercedes_s_picture = URI.open('https://imgr1.auto-motor-und-sport.de/Mercedes-S-Klasse-W223-bigMobileWide-15a7a86f-1736414.jpg')
 mercedes_s.photo.attach(io: mercedes_s_picture, filename: 'nes.png', content_type: 'image/png')
 mercedes_s.save!
 
