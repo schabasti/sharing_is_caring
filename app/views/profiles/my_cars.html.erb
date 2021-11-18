@@ -1,0 +1,27 @@
+<div class="banner-small" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://stars-h2020.eu/wp-content/uploads/2018/03/Photo-INEA-Project-Fiche.png);">
+  <div class="container">
+  <h1>Sharing is Caring</h1>
+  <p>Your local eco-friendly car service</p>
+  </div>
+</div>
+<br>
+
+<div class="container-index">
+  <h2><%= current_user.username.capitalize %>'s cars</h2>
+  <% @cars.each do |car| %>
+    <%= link_to(car_path(car)) do %>
+    <div class="card-product">
+      <%= cl_image_tag car.photo.key %>
+      <div class="card-product-infos">
+        <h4><%= car.brand %> <%= car.model %></h4>
+        <p> <%= car.description %> </p>
+      </div>
+    </div>
+    <% end %>
+  <br>
+  <% end %>
+
+  <div class="text-center">
+    <%= link_to "Back to Homepage", root_path, class: "btn btn-secondary"%>
+  </div>
+</div>

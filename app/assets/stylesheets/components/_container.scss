@@ -1,17 +1,16 @@
-.container-index h1 {
-  margin: 0;
-  color: rgb(20, 19, 19);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 50px;
-  font-weight: bold;
-  font-family: PT Serif;
-}
-
 .container-index{
   display: grid;
   justify-content: center;
   align-items: center;
 
+  h1 {
+    margin: 0;
+    color: rgb(20, 19, 19);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: PT Serif;
+  }
   a {
     text-decoration: none;
     color: black;
@@ -22,25 +21,4 @@
     color: black;
     opacity: .7;
   }
-}
-
-.container-show {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-show h2 {
-  color: rgb(20, 19, 19);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 50px;
-  font-weight: bold;
-  font-family: PT Serif;
-}
-
-.container-show p {
-  font-size: 20px;
-  color: rgb(20, 19, 19);
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
