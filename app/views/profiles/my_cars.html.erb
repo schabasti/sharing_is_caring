@@ -7,7 +7,7 @@
 <br>
 
 <div class="container-index">
-  <h2 class="text-center"><%= current_user.username.capitalize %>'s cars</h2>
+  <h2 class="text-center"><%= current_user.first_name.capitalize %> <%= current_user.last_name.capitalize %>'s cars</h2>
   <% @cars.each do |car| %>
     <%= link_to(car_path(car)) do %>
     <div class="card-product">
