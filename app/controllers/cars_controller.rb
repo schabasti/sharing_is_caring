@@ -23,6 +23,16 @@ class CarsController < ApplicationController
     end
   end
 
+  def edit
+    @car = Car.find(params[:id])
+  end
+
+  def destroy
+    @car = Car.find(params[:id])
+    @car.destroy
+    redirect_to my_cars_path, notice: "Your car has been deleted."
+  end
+
   private
 
   def car_params

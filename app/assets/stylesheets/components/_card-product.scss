@@ -7,8 +7,12 @@
   align-items: center;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 15px;
   min-width: 650px;
+  max-width: 650px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
   img {
     height: 100%;
     width: 160px;
@@ -34,4 +38,10 @@
   .card-product-infos {
     padding: 16px;
   }
+}
+
+.action-buttons {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
 }
