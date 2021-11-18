@@ -6,11 +6,16 @@
   <div class="car-description">
     <div class="car-info">
       <h2><%= @car.brand %> <%= @car.model %></h2>
-      <p>Owner: <%= @car.user.username %></p>
+
+        <%= cl_image_tag @car.user.photo.key, class: "avatar" %>
+        <%= @car.user.username %>
+
       <p>Description: <%= @car.description %></p>
       <p><%= @car.seats %> Seater</p>
     </div>
+    <% if current_user != @car.user %>
     <%= link_to "Rent this car", new_car_renting_path(@car), class: "btn btn-success rent-button"%>
+    <% end %>
   </div>
   <div class="text-center back-button">
     <%= link_to "See all cars", cars_path, class: "btn btn-secondary"%>
