@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'profiles/my_cars'
   devise_for :users
   root to: 'pages#home'
   resources :cars, only: %i[index new create show] do
     resources :rentings, only: %i[new create show]
   end
+  get "/my_cars", to: "profiles#my_cars"
 end
