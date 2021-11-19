@@ -4,8 +4,7 @@
     <%= cl_image_tag @car.photo.key, width: "100%" %>
     <div class="receipt-description">
       <p>Your renting period is <i class="fas fa-calendar-week"></i> <%= @renting.date %></p>
-      <p>Your Car brand: <%= @car.brand %></p>
-      <p>Your car model:<%= @car.model %></p>
+      <p>Your Car: <%= @car.brand %> <%= @car.model %></p>
     </div>
   </div>
 
