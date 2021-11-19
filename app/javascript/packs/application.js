@@ -24,7 +24,8 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import flatpickr from "flatpickr";
+import { initFlatpickr } from "../plugins/flatpickr"
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -32,8 +33,5 @@ import flatpickr from "flatpickr";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  flatpickr("#flatpickr", {
-    altInput: true,
-    inline: true
-  });
+  initFlatpickr();
 });
