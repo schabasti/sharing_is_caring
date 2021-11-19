@@ -1,14 +1,18 @@
 <div class="container">
-  <h1> Rent your car <%= image_tag("https://icon-library.com/images/car-icon-front/car-icon-front-15.jpg", width: "50", height: "40")  %> </h1>
-  <div class="input-form">
-    <%= simple_form_for [@car, @renting] do |f| %>
-      <%= f.input :date %>
-      <%= f.submit class: "btn btn-success" %>
-    <% end %>
-  </div>
-
-  <div class="display=flex text-center">
-    <%= link_to "See all cars", cars_path, class: "btn btn-secondary"%>
-    <%= link_to "Check car details", car_path(@car), class: "btn btn-secondary"%>
+  <div class="rent-your-car">
+    <h1> Rent your car <%= image_tag("https://icon-library.com/images/car-icon-front/car-icon-front-15.jpg", width: "50", height: "40")  %> </h1>
+    <div class="input-form">
+      <%= simple_form_for [@car, @renting] do |f| %>
+        <%= f.input :date, as: :string, input_html: { id: "flatpickr" } %>
+        <%= f.submit class: "btn btn-success new-renting-button" %>
+      <% end %>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="display=flex text-center">
+      <%= link_to "See all cars", cars_path, class: "btn btn-secondary"%>
+      <%= link_to "Check car details", car_path(@car), class: "btn btn-secondary"%>
+    </div>
   </div>
 </div>
