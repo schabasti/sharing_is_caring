@@ -3,8 +3,10 @@
     <h1>Your Renting</h1>
     <%= cl_image_tag @car.photo.key, width: "100%" %>
     <div class="receipt-description">
-      <p>Your renting period is <i class="fas fa-calendar-week"></i> <%= @renting.date %></p>
+      <p><i class="fas fa-calendar-week"></i> <%= @renting.date %></p>
+      <%= link_to(car_path(@car)) do %>
       <p>Your Car: <%= @car.brand %> <%= @car.model %></p>
+      <% end %>
     </div>
   </div>
 
