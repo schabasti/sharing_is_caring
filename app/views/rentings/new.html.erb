@@ -4,7 +4,7 @@
     <div class="input-form">
       <%= simple_form_for [@car, @renting] do |f| %>
         <%= f.input :date, as: :string, input_html: { id: "flatpickr", class: "d-none" } %>
-        <%= f.submit class: "btn btn-success new-renting-button" %>
+        <%= f.submit "Rent car", class: "btn btn-success new-renting-button" %>
       <% end %>
     </div>
     <br>

@@ -7,7 +7,8 @@
 <br>
 
 <div class="container-index">
-  <h1>All Cars</h1>
+  <h1 class="text-center">All Cars</h1>
+  <br>
   <% @cars.each do |car| %>
     <%= link_to(car_path(car)) do %>
     <div class="card-product">
